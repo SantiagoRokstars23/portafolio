@@ -17,7 +17,7 @@
         <h2>SG</h2>
         <ul>
             <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about">Quien es santiago</a></li>
+            <li><a href="#about">Quien es Santiago</a></li>
             <li><a href="#projects">Proyectos</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
@@ -70,8 +70,7 @@
         </div>
 
         <div class="hero-img">
-            <img src="/img/foto_perfil2.png"
-                alt="avatar">
+            <img src="img/foto_perfil2.png" alt="avatar">
         </div>
     </section>
 
@@ -80,7 +79,7 @@
     <section id="about" class="fade-in">
 
         <div class="project-card-about">
-            <h2>Quien es santiago</h2>
+            <h2>Quien es Santiago</h2>
             <p>
                 Actualmente curso sexto semestre de mi tecnólogo en sistemas de información y estoy fortaleciendo mis
                 habilidades en inteligencia
@@ -95,55 +94,73 @@
 
     <!-- PROYECTOS -->
 
-    <section class="section-proyect">
-        <div class="project-card">
-            <h3>Microservicio de Transferencias</h3>
-            <p>
-                API desarrollada con Spring Boot para gestión de transferencias bancarias,
-                incluyendo validación de saldo, manejo de errores y arquitectura limpia.
-            </p>
+    <section id="projects">
 
-            <br>
+        <h2>Proyectos</h2>
 
-            <h3>💳 Sistema de Transferencias Bancarias</h3>
+        <!-- GRID -->
+        <div class="projects-grid">
 
-            <p>
-                Sistema backend basado en microservicios para la gestión de transferencias entre cuentas,
-                con validación de saldo, control de errores y arquitectura limpia.
-            </p>
-
-            <ul>
-                <li>✔ Validación de saldo en tiempo real</li>
-                <li>✔ Manejo de errores transaccionales</li>
-                <li>✔ Arquitectura basada en capas (Clean Architecture)</li>
-                <li>✔ Persistencia con PostgreSQL</li>
-            </ul>
-
-            <div class="tech">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>PostgreSQL</span>
+            <div class="project-card" onclick="openProject(1)">
+                <h3>Microservicio de Transferencias</h3>
+                <p>API con validaciones, arquitectura limpia y manejo de errores.</p>
             </div>
 
+            <div class="project-card" onclick="openProject(2)">
+                <h3>Sistema Veterinario</h3>
+                <p>Gestión de citas y usuarios con backend escalable.</p>
+            </div>
+
+            <div class="project-card" onclick="openProject(3)">
+                <h3>Proyecto con IA</h3>
+                <p>Automatización y clasificación de datos con IA.</p>
+            </div>
 
         </div>
 
-        <div class="project-card">
-            <h3>Sistema Veterinario</h3>
-            <p>
-                Backend para gestión de citas y usuarios, diseñado con enfoque en
-                microservicios y escalabilidad.
-            </p>
+        <!-- DETALLE -->
+        <div id="project-detail" class="project-detail hidden">
+
+            <span class="close" onclick="closeProject()">✖</span>
+
+            <h3 id="detail-title"></h3>
+
+            <p id="detail-description"></p>
+
+            <ul id="detail-features"></ul>
+
+            <div id="detail-tech" class="tech"></div>
+
         </div>
 
-        <div class="project-card">
-            <h3>Proyecto con IA</h3>
-            <p>
-                Integración de inteligencia artificial para automatización de procesos
-                y clasificación de datos usando herramientas modernas.
-            </p>
-        </div>
     </section>
+
+
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">✖</span>
+
+            <h2 id="modal-title"></h2>
+
+            <img id="modal-img" src="" alt="project image">
+
+            <p id="modal-description"></p>
+
+            <ul id="modal-features"></ul>
+
+            <div id="modal-tech" class="tech"></div>
+
+            <div class="modal-buttons">
+                <a id="modal-github" target="_blank" class="btn-primary">Ver código</a>
+                <a id="modal-api" target="_blank" class="btn-secondary">Ver API</a>
+            </div>
+
+        </div>
+
+    </div>
+
 
     <section id="ai">
         <h2>Inteligencia Artificial</h2>
