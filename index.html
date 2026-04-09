@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Santiago</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <h2>SG</h2>
+        <ul>
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#about">Quien es santiago</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="hero fade-in">
+        <div class="hero-text">
+
+            <h1>Hola, Soy Santiago</h1>
+            <h2>Backend Developer</h2>
+
+            <p>
+                Soy desarrollador Java con más de tres años de experiencia construyendo microservicios con Spring Boot,
+                enfocado en crear soluciones escalables y mantenibles bajo principios de arquitectura limpia.
+                He trabajado con bases de datos como PostgreSQL, integración de servicios y optimización de procesos,
+                siempre buscando que el
+                código sea claro y adaptable a cambios.
+
+            </p>
+            <br>
+
+            <div class="socials">
+                <a href="https://github.com/SantiagoRokstars23" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/santiago-grueso-73a7b4262/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:sgruesomunoz@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <br>
+            <div class="buttons">
+                <button onclick="scrollToSection('contact')" class="btn-primary">
+                    <b>
+                        Contáctame
+                    </b>
+                </button>
+                <button onclick="scrollToSection('projects')" class="btn-secondary">
+                    <b>
+                        Ver proyectos
+                    </b>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="/img/foto_perfil2.png"
+                alt="avatar">
+        </div>
+    </section>
+
+
+    <!-- SOBRE MI -->
+    <section id="about" class="fade-in">
+
+        <div class="project-card-about">
+            <h2>Quien es santiago</h2>
+            <p>
+                Actualmente curso sexto semestre de mi tecnólogo en sistemas de información y estoy fortaleciendo mis
+                habilidades en inteligencia
+                artificial, trabajando con herramientas como Claude para integrar capacidades modernas en soluciones
+                reales.
+                Me interesa seguir creciendo en entornos donde pueda aportar valor con buenas prácticas y evolucionar
+                hacia soluciones más
+                inteligentes y eficientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+
+    <section class="section-proyect">
+        <div class="project-card">
+            <h3>Microservicio de Transferencias</h3>
+            <p>
+                API desarrollada con Spring Boot para gestión de transferencias bancarias,
+                incluyendo validación de saldo, manejo de errores y arquitectura limpia.
+            </p>
+
+            <br>
+
+            <h3>💳 Sistema de Transferencias Bancarias</h3>
+
+            <p>
+                Sistema backend basado en microservicios para la gestión de transferencias entre cuentas,
+                con validación de saldo, control de errores y arquitectura limpia.
+            </p>
+
+            <ul>
+                <li>✔ Validación de saldo en tiempo real</li>
+                <li>✔ Manejo de errores transaccionales</li>
+                <li>✔ Arquitectura basada en capas (Clean Architecture)</li>
+                <li>✔ Persistencia con PostgreSQL</li>
+            </ul>
+
+            <div class="tech">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>PostgreSQL</span>
+            </div>
+
+
+        </div>
+
+        <div class="project-card">
+            <h3>Sistema Veterinario</h3>
+            <p>
+                Backend para gestión de citas y usuarios, diseñado con enfoque en
+                microservicios y escalabilidad.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Proyecto con IA</h3>
+            <p>
+                Integración de inteligencia artificial para automatización de procesos
+                y clasificación de datos usando herramientas modernas.
+            </p>
+        </div>
+    </section>
+
+    <section id="ai">
+        <h2>Inteligencia Artificial</h2>
+        <p>
+            Actualmente estoy integrando herramientas de inteligencia artificial como Claude
+            para automatizar procesos, mejorar flujos backend y generar soluciones más inteligentes.
+        </p>
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section id="contact" class="fade-in">
+        <h2>Contacto</h2>
+        <p>Email: tuemail@email.com</p>
+        <p>GitHub: github.com/tuusuario</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
